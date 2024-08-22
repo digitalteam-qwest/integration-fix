@@ -34,10 +34,10 @@ function addUrlColumn() {
                 const dataId = editButton.getAttribute('data-id');
         
                 // Get the current page URL
-                const currentUrl = window.location.href;
+                const currentUrl = window.location.origin;
         
                 // Create the new URL using the data-id
-                const newUrl = `${currentUrl}#integrations/edit/${dataId}`;
+                const newUrl = `${currentUrl}/admin/integrations/#integrations/edit/${dataId}`;
         
                 // Create a new table cell (td) element
                 const newCell = document.createElement('td');
