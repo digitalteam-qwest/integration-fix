@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "integrations fix",
+    "version": "2.0",
+    "description": "-",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+            "https://qwest-test-forms.achieveservice.com/admin/integrations/",
+            "https://qwest-forms.achieveservice.com/admin/integrations/"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+    }
+}  
